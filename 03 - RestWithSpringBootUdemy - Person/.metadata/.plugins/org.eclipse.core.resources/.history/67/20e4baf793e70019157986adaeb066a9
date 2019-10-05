@@ -1,0 +1,15 @@
+package br.com.erudio;
+
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MathController {
+
+	@RequestParam(value="/sum/{value1}/{value2}", method=RequestMethod.GET)
+	public Double sum () {
+		
+	}
+	
+}

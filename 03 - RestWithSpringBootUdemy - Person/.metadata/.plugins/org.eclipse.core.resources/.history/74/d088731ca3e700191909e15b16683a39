@@ -51,4 +51,40 @@ public class PersonController {
 	}
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	private boolean isNumeric(String n) {
+
+		if(n == null) return false;
+		
+		String aux = n.replaceAll(",", ".");
+		
+		return aux.matches("[-+]?[0-9]*\\.?[0-9]+");
+	}
+
+	private Double convertToDouble(String n) {
+		
+		if(n == null) return 0d;
+		
+		String aux = n.replaceAll(",", ".");
+		
+		if(isNumeric(aux)) return Double.parseDouble(aux);
+		
+		return 0d;
+	}
+	
 }

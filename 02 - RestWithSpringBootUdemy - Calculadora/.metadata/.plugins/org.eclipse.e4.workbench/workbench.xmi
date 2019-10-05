@@ -209,7 +209,7 @@
           <tags>persp.viewSC:org.eclipse.datatools.sqltools.result.resultView</tags>
           <tags>persp.perspSC:org.eclipse.datatools.sqltools.sqleditor.perspectives.EditorPerspective</tags>
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_MESyP-cnEemPkP_YdUl8zA" selectedElement="_MESyR-cnEemPkP_YdUl8zA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_MESyP-cnEemPkP_YdUl8zA" selectedElement="_MESyQOcnEemPkP_YdUl8zA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_MESyQOcnEemPkP_YdUl8zA" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="1486" selectedElement="_MESyQucnEemPkP_YdUl8zA">
               <tags>org.eclipse.e4.primaryNavigationStack</tags>
               <tags>MinimizedByZoom</tags>
@@ -367,7 +367,7 @@
           <tags>org.eclipse.e4.primaryDataStack</tags>
           <tags>EditorStack</tags>
           <children xsi:type="basic:Part" xmi:id="_qxzlsOeSEemU-YTx21nKOw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MathController.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MathController.java&quot; partName=&quot;MathController.java&quot; title=&quot;MathController.java&quot; tooltip=&quot;rest-with-springboot-udemy/src/main/java/br/com/erudio/MathController.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rest-with-springboot-udemy/src/main/java/br/com/erudio/MathController.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2122&quot; selectionTopPixel=&quot;722&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MathController.java&quot; partName=&quot;MathController.java&quot; title=&quot;MathController.java&quot; tooltip=&quot;rest-with-springboot-udemy/src/main/java/br/com/erudio/MathController.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/rest-with-springboot-udemy/src/main/java/br/com/erudio/MathController.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2122&quot; selectionTopPixel=&quot;731&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>removeOnHide</tags>
             <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -660,7 +660,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_METZvucnEemPkP_YdUl8zA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dGGDoOeSEemU-YTx21nKOw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_MEV4UOcnEemPkP_YdUl8zA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_-vDkB-eiEemSi-8tmVHeTg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_MEV4UOcnEemPkP_YdUl8zA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_METZy-cnEemPkP_YdUl8zA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -697,7 +697,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_METaKOcnEemPkP_YdUl8zA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dGH40-eSEemU-YTx21nKOw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_MEV38-cnEemPkP_YdUl8zA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_-vDkFOeiEemSi-8tmVHeTg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_MEV38-cnEemPkP_YdUl8zA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_METaMucnEemPkP_YdUl8zA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3346,7 +3346,7 @@
   <addons xmi:id="_MEV5yucnEemPkP_YdUl8zA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_MEV5y-cnEemPkP_YdUl8zA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_MEV5zOcnEemPkP_YdUl8zA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_bDeroeeSEemU-YTx21nKOw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_MEV5zucnEemPkP_YdUl8zA" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_MEV5z-cnEemPkP_YdUl8zA" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_MEV50OcnEemPkP_YdUl8zA" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>

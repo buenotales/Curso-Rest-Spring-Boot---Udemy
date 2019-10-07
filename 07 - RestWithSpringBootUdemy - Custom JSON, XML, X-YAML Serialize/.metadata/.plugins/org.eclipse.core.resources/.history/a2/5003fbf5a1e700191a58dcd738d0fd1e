@@ -1,0 +1,66 @@
+package br.com.erudio.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+
+
+import br.com.erudio.model.Person;
+
+@Service
+public class PersonServices {
+
+	private final AtomicLong counter = new AtomicLong();
+
+	public Person create(Person person) {
+		return person;
+	}
+	
+	public Person update(Person person) {
+		return person;
+	}
+	
+	public Person findById(String id) {
+		
+		Person person = new Person();
+		person.setId(counter.incrementAndGet());
+		person.setFirstname("Tales");
+		person.setLastname("Bueno");
+		person.setAddress("Jaguariúna");
+		person.setDenger("Masculino");
+		
+		return person;
+	}
+	
+	public List<Person> findAll(){
+		
+		List<Person> persons = new ArrayList<Person>();
+		
+		for(int x = 0; x < 10; x++) {
+			
+			Person person = new Person();
+			
+			person = mockPerson(x);
+			
+			persons.add(person);
+		}
+		
+		return persons;
+	}
+
+	private Person mockPerson(int x) {
+
+		Person person = new Person();
+		
+		person.setId(counter.incrementAndGet());
+		person.setFirstname("Person Firstname: " + x);
+		person.setLastname("Person Lastname: " + x);
+		person.setAddress("Person Address: " + x);
+		person.setDenger("Person Denger: " + x);
+			
+		return person;
+	}
+}

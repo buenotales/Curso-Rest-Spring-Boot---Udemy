@@ -1,0 +1,63 @@
+package br.com.erudio.services;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.erudio.converter.DozerConverter;
+import br.com.erudio.data.model.Person;
+import br.com.erudio.data.vo.PersonVO;
+import br.com.erudio.exception.ResourceNotFoundException;
+import br.com.erudio.repository.PersonRepository;
+
+@Service
+public class PersonServices {
+
+	@Autowired
+	PersonRepository repository;
+
+	public PersonVO create(PersonVO person) {
+		
+		var entity = DozerConverter.parseObject(person, Person.class);
+		var vo = DozerConverter.parseObject(repository.save(entity), PersonVO.class);
+		
+		return vo;
+	}
+	
+	public PersonVO update(PersonVO person) {
+		
+		var entity = repository.findById(person.getId()).orElseThrow(() -> new ResourceNotFoundException("No record for this id ID."));
+				
+		entity.setFirstname(person.getFirstname());
+		entity.setLastname(person.getLastname());
+		entity.setAddress(person.getAddress());
+		entity.setDenger(person.getDenger());
+		
+		var vo = DozerConverter.parseObject(repository.save(entity), PersonVO.class);
+		
+		return vo;
+	}
+	
+	public void delete(Long id) {
+		
+		Person entity = repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No record for this id ID."));
+		
+		repository.delete(entity);
+		
+	}
+	
+	public PersonVO findById(Long id) {
+		
+		var entity = repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No record for this id ID."));
+		
+		return DozerConverter.parseObject(entity, PersonVO.class);
+		
+	}
+	
+	public List<PersonVO> findAll(){
+		
+		return DozerConverter.parseListObject(repository.findAll(), PersonVO.class);
+	}
+}

@@ -1,0 +1,43 @@
+package br.com.erudio;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingController {
+	
+	@RequestMapping(value="/sum/number1/number2", method = RequestMethod.GET)
+	public double greeting(@PathVariable(value="number1") String number1, @PathVariable(value = "number2") String number2) throws Exception {
+		
+		if(!isNumeric(number1) || !isNumeric(number2)) {
+			throw new Exception();
+		}		
+		
+		Double sum = convertToDouble(number1) + convertToDouble(number2);
+		
+		return sum;
+	}
+
+	private Double convertToDouble(String number) {
+		
+		if(number == null) return 0D;
+		String aux = number.replaceAll(",", ".");
+		
+		if(isNumeric(aux)) return Double.parseDouble(aux);
+		
+		return 0D;
+	}
+
+	private boolean isNumeric(String number) {
+		
+		if(number == null) return false;
+		String aux = number.replaceAll(",", ".");
+				
+		return aux.matches("[-+]?[0-9]*\\\\.?[0-9]+");
+	}
+	
+}
